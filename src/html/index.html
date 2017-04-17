@@ -1,0 +1,58 @@
+<!--
+   index.html
+   
+   Author 2017 X. Breogan Costa <xbcovelo@gmail.com>
+   
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Index</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.26" />
+</head>
+
+<body>
+  <p>
+    <h2>Job operations: </h2>
+  </p>
+	<p>
+    <a href="/upload">Upload a data file to be used by the scripts</a>
+  </p>
+  <p>
+    From the script location, it must be referenced inside 'data/' directory
+  </p><br>
+  
+	<p>
+    <a href="/stderrout">Download the STDOUT and STDERR of a script execution</a>
+  </p>
+  <p>
+    From the script location, they must be writen inside 'results/' directory
+  </p><br>
+  <!--
+	<p>
+    <a href="/results">Download the result of a script execution (if writen in the subfolder data/)</a>
+  </p>
+  <p>From the script location, they must be writen inside 'results/' directory</p><br>
+  -->
+	<p>
+    <a href="/kpi">Key Performance Indicators (KPIs)</a>
+  </p>
+  <p>
+    From this section you can check the KPIs per day
+  </p><br>
+	<p>
+    <h2>Run a job: 
+  </h2>
+  <form action="/run" method="post">
+    Script complete name:<br>
+    <input type="text" name="jobname"><br>
+    Parameters:<br>
+    <input type="text" name="jobparams">
+    <input type="submit" value="Submit">
+  </form>
+  
+</html>

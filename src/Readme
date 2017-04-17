@@ -3,7 +3,6 @@ JobExecRequestWebUI.py
 Language and platform:
   Build and tested in Python 3.5 in MacOS 10.12.3 with Google Chrome.
   It uses an embedded Web Server, flask.
-  In Ubuntu I had problems to run flask.
 
 Dependences installation:
   The next extra Python 3 libraries will be required:
